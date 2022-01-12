@@ -1,0 +1,31 @@
+@import "src/app/styles/colors";
+
+.logo {
+  margin-right: 12px;
+}
+
+.title {
+  margin-right: 12px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-item {
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    margin-right: 8px;
+  }
+}
+
+.nav-item:hover, .nav-item-active {
+  cursor: pointer;
+  background-color: $yellow-600;
+  color: $gray-900;
+}

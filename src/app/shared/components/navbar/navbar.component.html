@@ -1,0 +1,8 @@
+<mat-toolbar>
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link *ngFor="let zone of zones"
+       (click)="onSelectedTabChange(zone)"
+       [active]="zone === selectedZone"> {{ zone.title }} </a>
+  </nav>
+</mat-toolbar>
+

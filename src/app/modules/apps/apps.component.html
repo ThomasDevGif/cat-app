@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+  <!-- Side nav -->
+  <mat-sidenav mode="side" opened [fixedInViewport]="true" [fixedTopGap]="64">
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+
+  <!-- Side nav content with nav bar and router -->
+  <mat-sidenav-content class="sidenav-content">
+    <app-navbar></app-navbar>
+
+    <div class="router-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

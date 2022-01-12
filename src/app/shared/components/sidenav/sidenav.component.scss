@@ -1,0 +1,27 @@
+@import "../../../styles/colors";
+
+.panel-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  mat-list {
+    width: 250px;
+
+    mat-list-item:hover {
+      cursor: pointer;
+      background-color: $gray-300;
+    }
+
+    .active {
+      background-color: $gray-300;
+    }
+  }
+
+  .version {
+    text-align: center;
+    color: $gray-600;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="panel-container">
+  <mat-list role="list">
+    <mat-list-item *ngFor="let item of sideItems" matRipple role="listitem" (click)="goTo(item)" [ngClass]="{'active': isActive(item.link)}">
+      {{ item.title }}
+    </mat-list-item>
+  </mat-list>
+  <div class="version">version 0.1</div>
+</div>

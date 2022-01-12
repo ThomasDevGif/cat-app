@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <img class="logo" src="./assets/images/logo.png" height="42" alt="logo"/>
+  <span class="title">Caterpillar</span>
+
+  <div *ngFor="let item of navItems" matRipple class="nav-item" [routerLink]="item.link"
+       routerLinkActive="nav-item-active">
+    <mat-icon>{{ item.icon }}</mat-icon>
+    <span>{{ item.title }}</span>
+  </div>
+
+  <span class="spacer"></span>
+  <button mat-icon-button aria-label="Settings">
+    <mat-icon>settings</mat-icon>
+  </button>
+</mat-toolbar>
